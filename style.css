@@ -6,6 +6,21 @@
 
 body {
   margin: 0;
+  font-family: "Work Sans";
+}
+
+h3 {
+  width: 85%;
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+hr {
+  height: 1px;
+  color: #faf9fc;
 }
 
 .pattern {
@@ -15,11 +30,44 @@ body {
   object-fit: cover;
 }
 
-.div2 {
+.colored-bg {
   background-color: #f8edfe;
-  height: 70vh;
+  position: relative;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  gap: 30px;
 }
 
 .card {
-  position: absolute;
+  background-color: #ffffff;
+  width: 340px;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: auto;
+  padding: 1em;
+
+  transform: translateY(-14%);
+}
+
+.ques {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-toggle {
+  width: 35px;
+  cursor: pointer;
+}
+
+.ques-ans {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.ques-ans--visible {
+  visibility: visible;
+  max-height: 200px;
 }
