@@ -9,36 +9,45 @@ body {
   font-family: "Work Sans";
 }
 
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
 h3 {
   width: 85%;
+  font-weight: 600;
 }
 
 p {
   font-size: 16px;
+  font-weight: 400;
+  color: #8c6991;
   line-height: 20px;
 }
 
 hr {
-  height: 1px;
-  color: #faf9fc;
+  height: 2px;
+  border: none;
+  background-color: #e2e2e25c;
 }
 
 .pattern {
   width: 100%;
   height: 30vh;
   background-image: url("assets/images/background-pattern-mobile.svg");
-  object-fit: cover;
+  background-size: cover;
 }
 
 .colored-bg {
-  background-color: #f8edfe;
+  background-color: #f9f0ff;
   position: relative;
   height: auto;
 }
 
 .header {
   display: flex;
-  gap: 30px;
+  gap: 12px;
 }
 
 .card {
@@ -55,6 +64,11 @@ hr {
 .ques {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+}
+
+.ques:hover {
+  color: #ad50e5;
 }
 
 .icon-toggle {
@@ -70,4 +84,31 @@ hr {
 .ques-ans--visible {
   visibility: visible;
   max-height: 200px;
+}
+
+@media (min-width: 440px) {
+  .pattern {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-size: cover;
+    height: 37vh;
+  }
+
+  .card {
+    width: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .pattern {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-size: cover;
+    height: 37vh;
+  }
+
+  .colored-bg {
+    height: 100vh;
+  }
+  .card {
+    width: 600px;
+    transform: translateY(-25%);
+  }
 }
